@@ -19,7 +19,7 @@ function CreateThread(props) {
             <h5 className="pt-2 ms-5 me-5">Crear nuevo hilo</h5>
             <div className="row p-3">
               <label className="col ms-4">Titulo</label>
-              <input className="col me-4 " type="text" />
+              <input id="inputTitulo" className="col me-4 " type="text" />
             </div>
 
             <div className="row">
@@ -33,6 +33,7 @@ function CreateThread(props) {
             </div>
 
             <button
+              id="btnCreateThread"
               type="button"
               className="btn btn-primary position-sticky m-3"
               onClick={clickHandler}

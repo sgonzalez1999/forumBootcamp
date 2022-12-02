@@ -4,6 +4,48 @@ import { useNavigate } from "react-router-dom";
 
 import Hilo from './Hilo'
 
+// const DUMMY_FLIGHTS = [
+//   {
+//     name: "deportes",
+//     tag: "duda",
+//     messages: [
+//       {
+//         message: "string",
+//         message: "string",
+//         message: "string",
+//         message: "string",
+//       },
+//     ],
+//   },
+//   {
+//     name: "videojuegos",
+//     tag: "sugerencia",
+//     messages: [
+//       {
+//         message: "string",
+//         message: "string",
+//         message: "string",
+//         message: "string",
+//         message: "string",
+//       },
+//     ],
+//   },
+//   {
+//     name: "peliculas",
+//     tag: "aclaración",
+//     messages: [
+//       {
+//         message: "string",
+//         message: "string",
+//         message: "string",
+//       },
+//     ],
+//   },
+// ];
+
+
+
+
 
 const Principal = (props) => {
     
@@ -36,6 +78,7 @@ const Principal = (props) => {
 
           <div className="col mt-2 m-1">
             <button
+            id='btnCrear'
               type="button"
               className="btn btn-outline-info btn-lg"
               onClick={clickHandler}
@@ -44,7 +87,7 @@ const Principal = (props) => {
             </button>
           </div>
         </div>
-        <div className='card bg-info mt-3' onClick={abrirDetalle}>
+        <div id="abrirDetalle" className='card bg-info mt-3' onClick={abrirDetalle}>
           <Hilo />
         </div>
 
